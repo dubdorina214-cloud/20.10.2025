@@ -1,0 +1,174 @@
+ 
+body,html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/new_background_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial,sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 100px;
+    gap: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  background-color: white;
+  height: 50px;
+}
+.header h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    gap: 40px;
+}
+.tabs button {
+    background: #1f7a36;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    gap: 40px;
+}
+
+.tabs button:hover,
+.tabs button.active {
+    background: #2ecc71;
+}
+.sidebar {
+    width: 420px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.sidebar h3 {
+    margin-top: 0;
+    color: #1f7a36;
+    font-weight: bold;
+    text-align: center;
+}
+.sidebar input[type="text"],
+.sidebar select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid ;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.sidebar input[type="text"]:focus,
+.sidebar select:focus {
+    outline: 2px solid #1f7a36;
+}
+.orar-calendar {
+  width: 90%;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 15px auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.orar-calendar th {
+  background: #1f7a36;
+  color: white;
+  padding: 8px;
+  border: 1px solid white;
+}
+.orar-calendar td {
+  width: 40px;
+  height: 35px;
+  border: 1px solid white;
+  font-weight: bold;
+}
+
+.green { background: #28a745; color: #fff; }
+.lightgreen { background: #a8e6a1; color: #000; }
+.orange { background: #f39c12; color: #fff; }
+.red { background: #e74c3c; color: #fff; }
+.gray { background: #bdc3c7; color: #000; }
+.blue { background: #3498db; color: #fff; }
+.black { background: #2c3e50; color: #fff; }
+.purple { background: #9b59b6; color: #fff; }
+.pink { background: #f5a9d0; color: #000; }
+.yellow { background: #ffeb3b; color: #000; }
+
+.orar-calendar tbody tr:hover td {
+  background: rgba(31,122,54,0.1);
+}
+.orar-logo {
+  width: 100px;         
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; 
+}
+.orar-section {
+  text-align: center;
+  margin: 30px auto;
+  width: 70%;
+  border-radius: 6px;
+  padding: 20px;
+  color: black;
+  display:contents;
+}
+
+.orar-section h2 {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.orar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  background: white;
+}
+
+.orar-table td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  vertical-align: top;
+}
+
+.orar-table .time {
+  width: 100px;
+  background: #1f7a36;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+.orar-table i {
+  font-weight: bold;
+  color: #333;
+}
+footer{
+    background: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+  
