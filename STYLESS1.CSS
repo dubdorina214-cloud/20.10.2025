@@ -1,0 +1,292 @@
+:root {
+    --primary-color: #e7a8b8; /* Пастельно-розовый */
+    --secondary-color: #fff6f8; /* Светло-розовый фон */
+    --accent-color: #d46a85;
+    --text-color: #333;
+    --gray-color: #666;
+    --font-main: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========== Шапка ========== */
+header {
+    background-color: white;
+    border-bottom: 1px solid #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.logo span {
+    color: var(--primary-color);
+}
+
+nav a {
+    margin: 0 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+nav a:hover,
+nav a.active {
+    color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.btn.big {
+    font-size: 18px;
+    padding: 15px 35px;
+}
+
+/* ========== Главный блок (Hero) ========== */
+.hero {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero .text {
+    flex: 1 1 50%;
+    max-width: 550px;
+}
+.hero .text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.hero .text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--gray-color);
+}
+.hero .text ul {
+    margin: 15px 0 25px;
+    list-style-type: "💐 ";
+}
+.hero .text li {
+    margin-bottom: 10px;
+}
+.hero .image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+.hero .image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ========== Блок преимуществ ========== */
+.features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+.features h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature-item {
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 20px;
+}
+.feature-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* ========== О нас (About) ========== */
+.about-hero {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+.about-intro {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-intro .text {
+    flex: 1 1 50%;
+    padding-right: 30px;
+}
+.about-intro .text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.about-intro .text p {
+    color: var(--gray-color);
+    font-size: 18px;
+}
+.about-intro .image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+.about-intro .image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* История и ценности */
+.about-story {
+    padding: 80px 0;
+    background-color: #fff;
+}
+.about-story h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.about-story p {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: var(--gray-color);
+}
+.values {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.value-item {
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 20px;
+}
+.value-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Команда */
+.team {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+.team h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.team-member {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 250px;
+    transition: 0.3s ease;
+}
+.team-member:hover {
+    transform: translateY(-5px);
+}
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.team-member h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+.team-member p {
+    color: var(--gray-color);
+}
+
+/* CTA (Призыв к действию) */
+.cta {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.cta p {
+    margin-bottom: 25px;
+}
+
+/* ========== Подвал ========== */
+footer {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+/* ========== Адаптив ========== */
+@media (max-width: 768px) {
+    .hero-content,
+    .about-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        display: none; /* позже можно заменить на бургер-меню */
+    }
+    .feature-list,
+    .values,
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
